@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1{
+    color: rgb(55, 58, 241)
+}
+
+img + p{
+    font-weight: 700;
+    font-style: italic;
+    opacity: .4;
+}
+div ~ a{
+    color: rgba(255, 0, 0, 0.914);
+}
+
+p::first-letter {
+    font-size: xx-large;
+}
+
+ul, ol {
+    line-height: 2em;
+}
+
+#copyright {
+    color: #0143bd
+}
