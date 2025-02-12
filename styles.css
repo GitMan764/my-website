@@ -12,11 +12,11 @@ img + p{
     font-weight: 700;
     font-style: italic;
     opacity: .4;
-    margin: 2em; /*1A. Margin*/
+    margin: 2em; /*1B. Margin*/
 }
 div ~ a{
     color: rgba(255, 0, 0, 0.914);
-    margin: 2em; /*1B. Margin*/
+    margin: 2em; /*1C. Margin*/
 }
 
 p::first-letter {
