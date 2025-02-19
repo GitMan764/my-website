@@ -3,27 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> <!-- 5A. Media Query -->
     <title>Cars</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
+<header>     
+    <h1>Cars For Sell</h1>
+                <nav id="nav_menu"> <!-- 1. Navigation Menu -->
+            <ul>
+            <li><a href="index.html">Current Cars</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li> <!-- 2. Three New Pages -->
+            <li><a href="previously-sold.html">Previously Sold</a></li>
+            <li><a href="sell-cars.html">Sell Cars to Us</a></li>
+            </ul>
+        </nav>
+</header>
     <main>
-        <h1>Cars For Sell</h1>
-        <img src="images/2016ford.jpg" alt="2016 ford F-150" width="300" height="225">
+        <section>
+        <img src="images/2016ford.jpg" alt="2016 ford F-150" width="25%"> <!-- 7. Scalable Image and 6. Fluid Layout -->
+        </section>
         <p>On this website are displayed the cars I have for sell in Bremerton, Washington. Currently these cars are for
             sell:</p>
         <ul>
             <li><a href="1999-intrepid.html">1999 Dodge Intrepid ES</a></li>
-            <li><a href="https://www.olympic.edu/">2016 ford F-150 2.7 Ecoboost XLT Crew cab</a></li>
-            <li><a href="https://www.olympic.edu/">2016 Volvo XC70 T5 Platinum AWD Wagon</a></li>
-            <li><a href="https://www.olympic.edu/">2008 Nissan Altima sl</a></li>
+            <li><a href="#2016ford">2016 ford F-150 2.7 Ecoboost XLT Crew cab</a></li> <!-- 4. Placeholders -->
+            <li><a href="#2016volvo">2016 Volvo XC70 T5 Platinum AWD Wagon</a></li>
+            <li><a href="#2008nissan">2008 Nissan Altima sl</a></li>
         </ul>
+        <section id="2016ford">
+        <img src="images/2016ford.jpg" alt="2016 ford F-150" width="25%">
+        </section>
+        <br>
+        <section id="2016volvo">
+        <img src="images/2016 Volvo.jpg" alt="2016 volvo" width="25%">
+         </section>
+        <br>
+        <section id="2008nissan">
+        <img src="images/2008 Nissan Altima sl.jpg" alt="2008 nissan" width="25%">
+        </section>
+        
+        <br>
         <div></div>
-        <a href="https://www.olympic.edu/">Coming Soon</a>
-        And <a href="https://www.olympic.edu/"> Previously Sold</a>
 
     </main>
     <footer>
