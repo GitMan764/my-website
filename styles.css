@@ -1,21 +1,29 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-image: linear-gradient(to bottom, rgb(244, 6, 6), rgb(0, 128, 0)); /*Gradient */
+    background-image: linear-gradient(to bottom, rgb(244, 6, 6), rgb(0, 128, 0));
+    /*Gradient */
 }
 
-h1{
+h1 {
     color: rgb(55, 58, 241);
-    margin: 1em; /*Margin*/
+    margin: 1em;
+    /*Margin*/
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
+.navbar {
+    display: flex;
+    overflow: hidden;
     margin-right: 20px;
+}
+
+
+.navbar a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -23,38 +31,62 @@ nav ul li a {
     color: white;
 }
 
-img + p{
+img+p {
     font-weight: 700;
     font-style: italic;
     opacity: .4;
-    margin: 2em; /*Margin*/
+    margin: 2em;
+    /*Margin*/
 }
-div ~ a{
+
+div~a {
     color: rgba(255, 0, 0, 0.914);
-    margin: 2em; /*Margin*/
+    margin: 2em;
+    /*Margin*/
 }
 
 p::first-letter {
     font-size: xx-large;
 }
 
-ul, ol {
+ul,
+ol {
     line-height: 2em;
-    border: 2px solid rgb(0, 128, 0); /*Border */
+    border: 2px solid rgb(0, 128, 0);
+    /*Border */
 }
 
 .column {
     float: left;
     width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 #copyright {
     color: #0143bd;
+}
+
+/* 5A. Media Queries */
+
+@media only screen and (max-width:536px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+    .column {
+        width: 100%;
+    }
 }
