@@ -1,23 +1,21 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to bottom, rgb(244, 6, 6), rgb(0, 128, 0));
-    /*Gradient */
+    /*Adds gradient background */
 }
 
-h1 {
+h1 { /*Changes color of headings throughout website*/
     color: rgb(55, 58, 241);
-    margin: 1em;
-    /*Margin*/
 }
 
-.navbar {
+.navbar { /*Navbar seen at the top of every page*/
     display: flex;
     overflow: hidden;
     margin-right: 20px;
 }
 
 
-.navbar a {
+.navbar a { /*Stylizes links on the navbar on every page*/
     float: left;
     display: flex;
     color: white;
@@ -26,12 +24,11 @@ h1 {
     text-decoration: none;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
+ul li a:visited {
+    color: rgb(15, 0, 128); /*Hopefully this makes visited links more visible since it's dark blue against red instead of reddish on red*/
 }
 
-img+p {
+img+p { /*Makes paragraphs after images italic, Done to fullfull previous assignment requirment*/
     font-weight: 700;
     font-style: italic;
     opacity: .4;
@@ -39,24 +36,18 @@ img+p {
     /*Margin*/
 }
 
-div~a {
-    color: rgba(255, 0, 0, 0.914);
-    margin: 2em;
-    /*Margin*/
-}
-
-p::first-letter {
+p::first-letter { /*Satisfied requirement from previous assignment by making the first letter of every paragraph larger*/
     font-size: xx-large;
 }
 
 ul,
-ol {
+ol { /*Applied to unordered list on Home Page and Intrepid page*/
     line-height: 2em;
     border: 2px solid rgb(0, 128, 0);
     /*Border */
 }
 
-.column {
+.column { /*Column on Intrepid page*/
     float: left;
     width: 50%;
 }
@@ -68,23 +59,19 @@ ol {
     clear: both;
 }
 
-#copyright {
+#copyright { /*Copyright symbol at bottom of each page is turned blue*/
     color: #0143bd;
 }
 
 /* 5A. Media Queries */
 
-@media only screen and (max-width:536px) {
+@media only screen and (max-width:536px) { /*Makes the horizontal navbar on every page into a vertical one if viewed with mobile device*/
     .navbar {
         flex-direction: column;
     }
-
-    .column {
-        width: 100%;
-    }
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:640px) { /*Turns the column on the Intrepid page into text that fills up the screen if using mobile device*/
 
     .column {
         width: 100%;
