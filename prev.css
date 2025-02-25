@@ -12,7 +12,7 @@ h1 {
 .navbar {
     /*Navbar seen at the top of every page*/
     display: flex;
-    /*1a. First Flexbox, makes navbar adjustable*/
+    /*1a. First Flex Box, makes navbar adjustable*/
     overflow: hidden;
     margin-right: 20px;
 }
@@ -58,6 +58,16 @@ ol {
     /*Column on Intrepid page*/
     float: left;
     width: 50%;
+}
+
+div {
+    background-color: #C8DFEE;
+}
+
+main {
+    display: grid;
+    grid-template: 100px 100px / 150px 150px 150px;
+    grid-gap: 15px 20px;
 }
 
 #copyright {
