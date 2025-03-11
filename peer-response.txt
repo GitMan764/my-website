@@ -1,0 +1,7 @@
+Evan Williams
+2. A lot of the content is aligned left. perhaps center some of the photos and the header.
+3.the nav bar works great, but it isn't obvious they are links. I'd suggest give them a hover effect.
+
+What I Did:
+Centered heading and three pictures on Current Cars page
+Add hover effect for navbar that underlines text

@@ -1,0 +1,52 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(244, 6, 6), rgb(0, 128, 0));
+    /*Adds gradient background */
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    /*Navbar seen at the top of every page*/
+    display: flex;
+    /*1a. First Flexbox, makes navbar adjustable*/
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex: 2;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.navbar a {
+    /*Stylizes links on the navbar on every page*/
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#copyright {
+    /*Copyright symbol at bottom of each page is turned blue*/
+    color: #0143bd;
+}
+
+/*Media Queries */
+
+@media only screen and (max-width:536px) {
+
+    /*Makes the horizontal navbar on every page into a vertical one if viewed with mobile device*/
+    .navbar {
+        flex-direction: column;
+    }
+}

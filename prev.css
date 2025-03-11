@@ -5,8 +5,7 @@ body {
 }
 
 h1 {
-    /*Changes color of headings throughout website*/
-    color: rgb(55, 58, 241);
+    text-align: center;
 }
 
 .navbar {
@@ -32,6 +31,14 @@ ul li a:visited {
     /*Hopefully this makes visited links more visible since it's dark blue against red instead of reddish on red*/
 }
 
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 img+p {
     /*Makes paragraphs after images italic, Done to fullfull previous assignment requirment*/
     font-weight: 700;
@@ -46,21 +53,7 @@ p::first-letter {
     font-size: xx-large;
 }
 
-ul,
-ol {
-    /*Applied to unordered list on Home Page and Intrepid page*/
-    line-height: 2em;
-    border: 2px solid rgb(0, 128, 0);
-    /*Border */
-}
-
-.column {
-    /*Column on Intrepid page*/
-    float: left;
-    width: 50%;
-}
-
-div {
+.table {
     background-color: #C8DFEE;
 }
 
@@ -68,6 +61,10 @@ main {
     display: grid;
     grid-template: 100px 100px / 150px 150px 150px;
     grid-gap: 15px 20px;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 #copyright {
@@ -86,10 +83,10 @@ main {
 }
 
 @media only screen and (max-width:640px) {
-    /*Turns the column on the Intrepid page into text that fills up the screen if using mobile device*/
+    /*Puts the grid into a single column on mobile devices*/
 
-    .column {
-        width: 100%;
-        /*1b. Second Flex Box, adjusts page width*/
+    main {
+        grid-template: 100px 100px 100px 100px 100px 100px / 150px;
+        /*1b. Second Flex Box*/
     }
 }
