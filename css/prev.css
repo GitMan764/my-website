@@ -37,7 +37,7 @@ ul li a:visited {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
 img+p {
     /*Makes paragraphs after images italic, Done to fullfull previous assignment requirment*/
@@ -59,11 +59,11 @@ p::first-letter {
 
 main {
     display: grid;
-    grid-template: 100px 100px / 150px 150px 150px;
+    grid-template: 100px 100px 100px 100px / 150px 150px 150px 150px 150px;
     grid-gap: 15px 20px;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 

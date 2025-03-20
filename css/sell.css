@@ -16,13 +16,6 @@ h1 {
     margin-right: 20px;
 }
 
-.content {
-    display: flex;
-    flex: 2;
-    padding: 1rem;
-    gap: 1rem;
-}
-
 .navbar a {
     /*Stylizes links on the navbar on every page*/
     float: left;
@@ -36,6 +29,36 @@ a:hover {
     text-decoration: underline;
 }
 
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
 #copyright {
     /*Copyright symbol at bottom of each page is turned blue*/
     color: #0143bd;
@@ -47,14 +70,6 @@ a:hover {
 
     /*Makes the horizontal navbar on every page into a vertical one if viewed with mobile device*/
     .navbar {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width:760px) {
-
-    /*Turns the Content into a single column*/
-    .content {
         flex-direction: column;
     }
 }

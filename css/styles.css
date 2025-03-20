@@ -32,7 +32,7 @@ ul li a:visited {
     /*Hopefully this makes visited links more visible since it's dark blue against red instead of reddish on red*/
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -64,13 +64,6 @@ ol {
     background-color: #C8DFEE;
 }
 
-
-.column {
-    /*Column on Intrepid page*/
-    float: left;
-    width: 50%;
-}
-
 #copyright {
     /*Copyright symbol at bottom of each page is turned blue*/
     color: #0143bd;
@@ -84,13 +77,9 @@ ol {
     .navbar {
         flex-direction: column;
     }
-}
 
-@media only screen and (max-width:640px) {
-    /*Turns the column on the Intrepid page into text that fills up the screen if using mobile device*/
-
-    .column {
-        width: 100%;
-        /*1b. Second Flex Box, adjusts page width*/
+    img {
+        width: 50%;
+        /*Keeps images large enough to read on mobile device */
     }
 }
