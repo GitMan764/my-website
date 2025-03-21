@@ -31,14 +31,6 @@ ul li a:visited {
     /*Hopefully this makes visited links more visible since it's dark blue against red instead of reddish on red*/
 }
 
-
-.dancing {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
 img+p {
     /*Makes paragraphs after images italic, Done to fullfull previous assignment requirment*/
     font-weight: 700;
@@ -82,10 +74,10 @@ a:hover {
     }
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:875px) {
     /*Puts the grid into a single column on mobile devices*/
 
-    main {
+    .tables {
         grid-template: 100px 100px 100px 100px 100px 100px / 150px;
         /*1b. Second Flex Box*/
     }

@@ -82,7 +82,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:875px) {
     /*Puts the grid into a single column on mobile devices*/
 
     main {
